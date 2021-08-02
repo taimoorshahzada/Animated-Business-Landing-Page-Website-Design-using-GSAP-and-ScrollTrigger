@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #b2b8c3;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #c97164;
+    text-align: center;
+    z-index: 200;
+}
+.load-text span{
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 50px;
+    margin-left: 5px;
+    display: inline-block;
+    font-family: 'George X';
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+
+}
+.logo{
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: 'George X';
+    font-weight: bold;
+    letter-spacing: 1.5;
+    text-transform: uppercase;
+}
+.main-section{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300vh;
+    flex-direction: column;
+    width: 100%;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+.reel{
+    margin-bottom: 100px;
+    display: flex;
+    width: auto;
+    height: 300px;
+    align-items: center;
+    overflow: hidden;
+    animation: reel 80s linear infinite;
+}
+.main-text, .main-text2{
+    font-size: 55px;
+    font-family: 'George X';
+    text-align: center;
+}
+@keyframes reel{
+    from{
+        transform: translateX(30%);
+    }
+    to{
+        transform: translateX(-30%);
+    }
+}
+.reel .pic{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.reel .pic0{
+    background-image: url(assets/pic0.jpg);
+}
+.reel .pic1{
+    background-image: url(assets/pic1.jpg);
+}
+.reel .pic2{
+    background-image: url(assets/pic2.jpg);
+}
+.reel .pic3{
+    background-image: url(assets/pic3.jpg);
+}
+.reel .pic4{
+    background-image: url(assets/pic4.jpg);
+}
+.reel .pic5{
+    background-image: url(assets/pic5.jpg);
+}
+.reel .pic6{
+    background-image: url(assets/pic6.jpg);
+}
+.reel .pic7{
+    background-image: url(assets/pic7.jpg);
+}
+.reel .pic8{
+    background-image: url(assets/pic8.jpg);
+}
+.reel .pic9{
+    background-image: url(assets/pic9.jpg);
+}
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+}
+.about-content{
+    width: 40vh;
+
+}
+.about-text{
+    font-family: 'George X';
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.about-desc p{
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.getintouch{
+    margin-top: 50px;
+    width: 150px;
+    font-family: 'George X';
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    border: .5px solid black;
+    transition: all .2s ease-in;
+}
+.getintouch:hover{
+    transition: all .2s ease-in;
+    color: #c97164;
+    border: .5px solid #c97164;
+}
+.about-hero{
+    width: 30vw;
+    height: 70vh;
+    background: url(assets/pic60.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    border-radius: 30% 30% 0 0;
+}
+.reel2{
+    margin-bottom: 100px;
+    display: flex;
+    width: auto;
+    height: 450px;
+    align-items: center;
+    overflow: hidden;
+    animation: reel2 70s linear infinite;
+}
+@keyframes reel2{
+    from{
+        transform: translateX(40%);
+    }
+    to{
+        transform: translateX(-40%);
+    }
+}
+.reel2 .pic{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height:400px;
+    margin-left: 20px;
+    margin-right: 20px;
+    filter: grayscale(1);
+    transition: all .4s ease-in-out;
+}
+.reel2 .pic:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.12);
+    filter: grayscale(0);
+}
+.reel2 .pic0{
+    background-image: url(assets/pic00.jpg);
+}
+.reel2 .pic1{
+    background-image: url(assets/pic10.jpg);
+}
+.reel2 .pic2{
+    background-image: url(assets/pic20.jpg);
+}
+.reel2 .pic3{
+    background-image: url(assets/pic30.jpg);
+}
+.reel2 .pic4{
+    background-image: url(assets/pic40.jpg);
+}
+.reel2 .pic5{
+    background-image: url(assets/pic50.jpg);
+}
+.reel2 .pic6{
+    background-image: url(assets/pic60.jpg);
+}
+.reel2 .pic7{
+    background-image: url(assets/pic70.jpg);
+}
+.reel2 .pic8{
+    background-image: url(assets/pic80.jpg);
+}
+.reel2 .pic9{
+    background-image: url(assets/pic90.jpg);
+}
